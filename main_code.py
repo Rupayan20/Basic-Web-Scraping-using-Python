@@ -19,5 +19,5 @@ for i in soup.findAll('td'):
 
 #we need to do scrapthe datafrom our raw data
 re.sub('^<td>.*">|</a></td>|</a></i></td>|</b>|<td>|</td>|\n','',arr[0])
-for i in arr:
-  print(re.sub('^<td>.*">|</a></td>|</a></i></td>|</b>|<td>|</td>|\n','',(i)))
+  for i in arr:
+  print(re.sub('^<td>.*">|</a></td>|</a></i></td>|</b>|<td>|</td>|\n|</a></i>|</a></span></span></span></i>','',(i)))
