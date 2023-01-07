@@ -28,8 +28,8 @@ OVA= []
 POT= []
 TEAM_NA= []
 CONTRACT= []
-VALUE(M)= []
-WAGE(K)= []
+VALUE= []
+WAGE= []
 TOTAL_STAT= []
 
 for i in arr:
@@ -51,3 +51,6 @@ df= pd.DataFrame({"Name": NAME,
                   "Value(M)": VALUE,
                   "Wage(K)":WAGE,
                   "Total":TOTAL_STAT})
+
+df.head()
+df.to_csv('fifa.csv')
